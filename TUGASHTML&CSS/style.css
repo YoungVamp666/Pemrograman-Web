@@ -1,0 +1,124 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 3vh;
+    background-color: #000000;
+    
+}
+
+/* Header */
+header {
+    background: url('BACKGROUND.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    min-height: 100vh;  /* supaya gambar full layar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-family: "Metal Mania", system-ui;
+    line-height: 75px;
+    font-size: 65px;
+    letter-spacing: 10px;
+    word-spacing: 10000px;
+}
+
+header p {
+    margin-top: 50px;
+    font-family: "Metal Mania", system-ui;
+    font-size: 20px;
+}
+
+/* Navbar */
+nav {
+    position: fixed;       /* Selalu menempel di atas */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6); /* Warna transparan (biru dengan opacity) */
+    backdrop-filter: blur(3px); /* Efek kaca blur */
+    z-index: 1000;         /* Supaya tidak ketutup konten */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Tengah secara horizontal */
+    padding: 15px 0;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffffdd; /* Efek hover kuning */
+}
+
+
+/* Section */
+section {
+    padding: 40px;
+    margin: 20px auto;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    backdrop-filter: blur(6px);
+}
+
+section h2 {
+    margin-bottom: 15px;
+    color: #000000;
+    font-family: "Metal Mania", system-ui;
+    letter-spacing: 3px;
+}
+
+/* Form */
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+form button {
+    background: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Metal Mania", system-ui;
+}
+
+form button:hover {
+    background: #616161;
+}
+
+/* Footer */
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    background: rgba(0, 0, 0, 0.6); /* Warna transparan (biru dengan opacity) */
+    backdrop-filter: blur(6px);
+}
